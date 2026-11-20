@@ -1,0 +1,33 @@
+/* Form styles. Built on site.css (copied from the main site) so everything matches. */
+.f-wrap{max-width:860px}
+.f-bar{position:sticky;top:calc(72px + env(safe-area-inset-top,0px));z-index:30;background:#fffffff2;backdrop-filter:blur(8px);border-bottom:1px solid var(--ln);padding:12px 0}
+.f-prog{height:6px;border-radius:3px;background:var(--ln);overflow:hidden}
+.f-prog i{display:block;height:100%;width:0;background:var(--b);border-radius:3px;transition:width .3s}
+.f-bar small{display:block;margin-top:6px;font:500 .66rem var(--m);letter-spacing:.1em;color:var(--sl)}
+.f-note{background:#fff;border:1px solid var(--ln);border-left:4px solid var(--b);border-radius:12px;padding:14px 18px;margin:0 0 20px;font-size:.95rem;color:var(--sl)}
+form#f{padding:clamp(22px,4vw,44px);border:1px solid var(--ln)}
+.f-sec{border:0;padding:0;margin:0 0 38px;min-width:0}
+.f-sec h3{margin:0 0 4px}
+.f-d{color:var(--sl);font-size:.95rem;margin:0 0 8px}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.f-span{grid-column:1/-1}
+@media(max-width:640px){.f-grid{grid-template-columns:1fr}}
+form#f textarea{resize:vertical;min-height:100px}
+form#f small{display:block;color:var(--sl);font-size:.78rem;margin-top:6px}
+form#f input[type=checkbox]{width:auto;padding:0;margin:0;accent-color:var(--b);box-shadow:none}
+.f-opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.f-opts label{display:flex;gap:8px;align-items:center;font:500 .92rem var(--t);margin:0;padding:9px 15px;border:1px solid var(--ln);border-radius:99px;background:var(--bg);cursor:pointer;transition:.2s}
+.f-opts label:hover{border-color:var(--b)}
+.f-opts label:has(input:checked){background:#2678f31a;border-color:var(--b);color:#1c5fc9}
+.f-agree label{border:0;background:none;padding:0;border-radius:0;align-items:flex-start;font-weight:400}
+.f-agree label:has(input:checked){background:none;color:inherit}
+.f-hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.f-msg{font-size:.9rem;min-height:1.3em;margin-top:12px;color:var(--n)}
+.f-msg.err{color:#b3261e}
+form#f .btn:disabled{opacity:.6;cursor:wait}
+.f-out{display:none;margin-top:22px;background:#fff;border:1px solid var(--ln);border-radius:20px;padding:clamp(20px,4vw,36px)}
+.f-out h3{margin:0 0 6px}
+.f-out pre{white-space:pre-wrap;word-break:break-word;background:var(--bg);border:1px solid var(--ln);border-radius:12px;padding:16px;font:500 .8rem/1.55 var(--m);max-height:420px;overflow:auto;margin:14px 0}
+.f-out .acts{margin-top:6px}
+.hub-link{display:block}
+@media print{header,footer,.hero,.f-bar,form#f,.acts,.wa{display:none!important}.f-out{display:block!important;border:0}body{background:#fff}}

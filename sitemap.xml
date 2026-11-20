@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org">
-  <url>
-    <loc>https://anyserve.co.za/</loc>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://anyserve.co.za/</loc><priority>1.0</priority></url>
+  <url><loc>https://anyserve.co.za/forms/</loc><priority>0.6</priority></url>
+  <url><loc>https://anyserve.co.za/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://anyserve.co.za/forms/hardware.html</loc><priority>0.5</priority></url>
 </urlset>

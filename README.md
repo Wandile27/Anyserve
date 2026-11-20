@@ -34,3 +34,12 @@ The service-section photography uses real Unsplash photographs, not generated il
 
 ## Preserved functionality
 Existing navigation, responsive menu, AnyTill image gallery, enquiry form (email), service anchors, contact details have been retained. Pricing has been removed (V3.1). No testimonials, certifications or new service guarantees were added.
+
+## V4 additions
+- `forms/` request forms (website, IT support, network, CCTV, hardware quote, POS). `forms/site.css` is a copy of the main site CSS so they match; if you change the site style, re-copy it. Set emails/keys in `forms/forms.js`.
+- Service buttons now open the matching form. New hardware sales copy and "Get a hardware quote" form.
+- Location wording changed to nationwide.
+- `privacy.html` draft privacy notice (have it reviewed before relying on it).
+- `sitemap.xml` fixed (the namespace was invalid) and extended.
+- Removed identical duplicate files in `assets/` (names ending _1 and _2). index.html did not use them.
+- Added `.nojekyll`, which the deploy notes above already require.
